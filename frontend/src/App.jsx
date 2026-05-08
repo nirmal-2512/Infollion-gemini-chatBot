@@ -5,7 +5,7 @@ import MessageInput from "./components/MessageInput";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
 
-const API = process.env.API || "http://localhost:3000/api";
+const API = "https://infollion-gemini-chatbot-7e2s.onrender.com/api";
 
 export default function App() {
   const [chats, setChats] = useState([
