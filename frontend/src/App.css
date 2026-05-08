@@ -31,7 +31,7 @@ body {
   background: #2a2a2a;
   padding: 2px 6px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 17px;
   color: #e0e0e0;
 }
 .message.bot pre {
@@ -59,12 +59,16 @@ body {
   border-bottom: 1px solid #2a2a2a;
 }
 
-.sidebar-header h2 { font-size: 16px; margin-bottom: 10px; }
+.sidebar-header h2 { 
+  font-size: 24px; 
+  margin-bottom: 10px; 
+  color: chocolate;
+}
 
 .new-chat-btn {
   width: 100%;
   padding: 8px;
-  background: #4f46e5;
+  background: chocolate;
   color: white;
   border: none;
   border-radius: 6px;
@@ -205,7 +209,7 @@ body {
   border: 1px solid #2a2a2a;
   border-radius: 8px;
   color: #e0e0e0;
-  font-size: 14px;
+  font-size: 18px;
   resize: none;
   outline: none;
   font-family: inherit;
@@ -214,15 +218,57 @@ body {
 .input-row textarea:focus { border-color: #4f46e5; }
 
 .send-btn {
+  width: 100px;
   padding: 10px 20px;
-  background: #4f46e5;
+  background: chocolate;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  height: 42px;
+  font-size: 18px;
+  height: 52px;
 }
 
-.send-btn:hover { background: #4338ca; }
+.send-btn:hover { background: rgb(255, 85, 0); }
 .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+@media (max-width: 720px) {
+  .app-container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .sidebar {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 18vh;
+    width: 100vw;
+
+  }
+
+  .sidebar-header {
+    padding: 8px;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .sidebar-header h2 { 
+    font-size: 18px; 
+    margin-bottom: 2px; 
+    color: chocolate;
+  }
+  .app-container {
+    width: 100vw;
+  }
+   .chat-area {
+    width: 100vw;
+  }
+  .message-input-area {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .send-btn{
+    width: 80px;
+    padding: 10px;
+  }
+}

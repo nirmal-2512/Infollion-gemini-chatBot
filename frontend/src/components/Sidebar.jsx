@@ -7,7 +7,7 @@ export default function Sidebar({
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>💬 Gemini Chat</h2>
+        <h2>Gemini ChatBOT</h2>
         <button className="new-chat-btn" onClick={onNewChat}>
           + New Chat
         </button>
