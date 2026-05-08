@@ -5,7 +5,7 @@ import MessageInput from "./components/MessageInput";
 import Sidebar from "./components/Sidebar";
 import "./App.css";
 
-const API = "http://localhost:3000/api";
+const API = process.env.API || "http://localhost:3000/api";
 
 export default function App() {
   const [chats, setChats] = useState([
